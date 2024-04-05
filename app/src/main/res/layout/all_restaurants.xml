@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_all_restaurant_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AllRestaurants">
+    <!-- android:focusable="true"
+    android:focusableInTouchMode="true"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/svg_arrow_back_48dp" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start"
+                    android:text="@string/delivering_to"
+                    android:textAllCaps="false"
+                    android:textColor="@color/home_session_prefix_color"
+                    android:textSize="@dimen/_9sdp" />
+
+                <TextView
+                    android:id="@+id/tv_all_r_location"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/delivering_to"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_11sdp"
+                    app:drawableStartCompat="@drawable/baseline_location_on_primary_color_18dp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/cart_btn"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_shopping_bag" />
+
+                <TextView
+                    android:id="@+id/cart_count"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_9sdp" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/wishlist"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/baseline_favorite_border_primary_color_24dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey_200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/delivery_tv"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ar_filter_apply"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/gc_mp_delivery"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/pickup_tv"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_square_grey300_color"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/pick_up"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lay_all_r_filters"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/filters"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    app:drawableStartCompat="@drawable/ic_filters_18" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@color/ar_menu_border_color" />
+
+            <LinearLayout
+                android:id="@+id/lay_all_r_cuisines"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/cuisines"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    app:drawableStartCompat="@drawable/ic_cooking_bowl_18" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@color/ar_menu_border_color" />
+
+
+            <LinearLayout
+                android:id="@+id/lay_all_r_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:drawablePadding="@dimen/_2sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="@string/search"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    app:drawableStartCompat="@drawable/baseline_search_text_color_18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey_200" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_all_restaurant_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/layout_restaurant_menu_item_list_empty_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_restaurant_menu_list_empty_image"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/ic_error_outline_black_48dp"
+                android:contentDescription="@string/image" />
+
+
+            <TextView
+                android:id="@+id/tv_restaurant_menu_list_empty_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/the_menu_item_list_empty"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_13sdp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_ar_filter_or_cuisines_transparent_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bottom_menu_trans_bg_color"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/wishlist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/view_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/req_new_cart_checkout_btn_color"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/data_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/added_to_the_wishlist"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="end"
+                android:text="@string/view_all"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--************************  Filters bottom sheet start ************************************-->
+
+    <!--
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/cl_all_restaurant_filters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_44sdp"
+            android:background="@color/white_transparent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lay_ar_filterBelowBottomSheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_ar_filter_container"
+                android:orientation="vertical"
+                app:behavior_hideable="true"
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/lay_ar_filter_title_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:gravity="start|center"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/lay_home_filter_close"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/lay_home_filter_close_container"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:background="@drawable/bg_ar_filter_close"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_24sdp"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:background="@drawable/baseline_close_black_48dp"
+                                    android:scaleType="fitXY" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_ar_filter_title"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="center"
+                            android:text="@string/filters"
+                            android:textColor="@color/ar_filter_title_text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_ar_filter_clear_all"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:gravity="start|center"
+                            android:text="@string/ar_filter_clear_all"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </LinearLayout>
+
+
+                    <ScrollView
+                        android:id="@+id/sv_ar_filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_60sdp"
+                        android:fillViewport="true"
+                        android:scrollbars="none"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:layout_marginRight="@dimen/_12sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_ar_filter_popular_filter_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:fontFamily="@font/poppins_semi_bold"
+                                android:gravity="start|center"
+                                android:text="@string/ar_filter_popular_filters"
+                                android:textColor="@color/ar_filter_title_text_color"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_pf_fast_delivery"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_pf_fast_delivery"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_pf_fast_delivery"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_pf_fast_delivery"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_pf_free_delivery"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_pf_free_delivery"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_pf_free_delivery"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_pf_free_delivery"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_pf_price_range"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_pf_price_range"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_pf_price_range"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_pf_price_range"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_pf_top_rated"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_pf_top_rated"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_pf_top_rated"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_pf_top_rated"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_pf_no_minimum_order"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_pf_no_minimum_order"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_pf_no_min_order"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_pf_no_minimum_order"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_pf_newly_added"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_pf_newly_added"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_pf_no_newly_added"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_pf_newly_added"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+
+
+                            <TextView
+                                android:id="@+id/tv_ar_filter_deals_and_offers_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_25sdp"
+                                android:fontFamily="@font/poppins_semi_bold"
+                                android:gravity="start|center"
+                                android:text="@string/ar_filter_deals_and_offers"
+                                android:textColor="@color/ar_filter_title_text_color"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_do_free_delivery"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_do_free_delivery"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_do_free_delivery"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_do_free_delivery"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_do_open_outlets"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_do_open_outlets"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_do_open_outlets"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_do_open_outlets"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_do_online_payments"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_do_online_payments"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_do_online_payments"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_do_online_payments"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_do_offers_coupons"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_do_offers_coupons"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_do_offers_coupons"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_do_offers_coupons"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_do_sort_by"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_do_sort_by"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_do_sort_by"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_do_sort_by"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_do_a_to_z"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_do_a_to_z"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_do_a_z"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_do_a_to_z"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_do_order_amt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_do_order_amt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_do_order_amount"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_do_order_amt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+                            <LinearLayout
+                                android:id="@+id/lay_ar_filter_do_rating"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_ar_filter_do_rating"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="start|center"
+                                    android:text="@string/ar_filter_do_rating"
+                                    android:textColor="@color/ar_filter_title_text_color"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <CheckBox
+                                        android:id="@+id/chk_box_ar_filter_do_rating"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:buttonTint="@color/colorPrimary">
+
+                                    </CheckBox>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@color/ar_filter_horizontal_line_color" />
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp">
+
+                        <Button
+                            android:id="@+id/btn_ar_filter_apply"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/bg_ar_filter_apply"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/ar_filter_apply"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    -->
+
+    <!--************************  Filters bottom sheet end *************************************-->
+
+
+</FrameLayout>

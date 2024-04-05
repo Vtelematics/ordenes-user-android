@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_restaurant_menu_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <!--**********************************************************************************-->
+
+
+    <!-- <LinearLayout
+         android:id="@+id/layout_restaurant_menu_search_container"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/_24sdp"
+         android:layout_marginBottom="@dimen/_12sdp"
+         android:layout_marginEnd="@dimen/_12sdp"
+         android:layout_marginLeft="@dimen/_12sdp"
+         android:layout_marginRight="@dimen/_12sdp"
+         android:layout_marginStart="@dimen/_12sdp"
+         android:layout_marginTop="@dimen/_12sdp"
+         android:background="@drawable/bg_restaurant_menu_search"
+         android:gravity="center"
+         android:visibility="visible">
+         &lt;!&ndash; android:layout_height="@dimen/_30sdp"&ndash;&gt;
+
+         <LinearLayout
+             android:id="@+id/layout_restaurant_menu_clear_image"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="0.2"
+             android:gravity="center">
+
+             <ImageView
+                 android:id="@+id/img_restaurant_menu_clear_image"
+                 android:layout_width="@dimen/_20sdp"
+                 android:layout_height="@dimen/_20sdp"
+                 android:layout_gravity="start|center"
+                 android:contentDescription="@string/app_name"
+                 android:src="@drawable/ic_clear_grey_500_48dp" />
+
+         </LinearLayout>
+
+
+         <com.foodmine.customclass.EditTextRobotoLight
+             android:id="@+id/et_restaurant_menu_search_word"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@drawable/bg_no_background"
+             android:gravity="start|center"
+             android:hint="@string/search_restaurant_products"
+             android:inputType="text"
+             android:padding="@dimen/_4sdp"
+             android:textColor="@color/text_color"
+             android:textSize="@dimen/_13sdp" />
+
+
+         <LinearLayout
+             android:id="@+id/layout_restaurant_menu_search_image"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="0.2"
+             android:gravity="center">
+
+             <ImageView
+                 android:id="@+id/img_restaurant_menu_search_image"
+                 android:layout_width="@dimen/_21sdp"
+                 android:layout_height="@dimen/_21sdp"
+                 android:layout_gravity="start|center"
+                 android:contentDescription="@string/app_name"
+                 android:src="@drawable/ic_search_grey_500_24dp" />
+
+         </LinearLayout>
+
+
+     </LinearLayout>-->
+
+    <!--**********************************************************************************-->
+
+
+    <FrameLayout
+        android:id="@+id/lay_restaurant_menu_body_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_store_menu_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lay_store_menu_tool_bar_back"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_store_menu_tool_bar_back_image"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_gravity="start|center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_back_button" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_store_menu_tool_bar_restaurant_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="start|center"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_restaurant_menu_title_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/white"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/layout_restaurant_menu_search_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <!-- android:layout_height="@dimen/_42sdp"-->
+
+
+                <LinearLayout
+                    android:id="@+id/layout_restaurant_list_search_container"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/bg_restaurant_list_search"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_restaurant_list_search_image"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_restaurant_list_search_image"
+                            android:layout_width="@dimen/_21sdp"
+                            android:layout_height="@dimen/_21sdp"
+                            android:layout_gravity="start|center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_search_grey_500_24dp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_restaurant_menu_search_word"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_no_background"
+                        android:gravity="start|center"
+                        android:hint="@string/search_restaurant_products"
+                        android:inputType="text"
+                        android:padding="@dimen/_4sdp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_restaurant_menu_clear_image"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_restaurant_list_clear_image"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="start|center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_clear_primary_color_48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_restaurant_list_search_close"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_restaurant_list_search_close"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:text="@string/close"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/store_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cart_lay_view_cart_page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="bottom"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/go_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="#cccfff"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center|end"
+                android:text="@string/view_basket"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/ic_arrow_forward_white_24dp"
+                    android:padding="@dimen/_6sdp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_bottom_menu_transparent_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bottom_menu_trans_bg_color"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout_bottom_menu_order_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_245sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/white_transparent">
+
+        <LinearLayout
+            android:id="@+id/lay_bottom_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="@dimen/_245sdp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <LinearLayout
+                android:id="@+id/layout_bottom_menu_search_in_store_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:background="@drawable/ic_search_grey_500_24dp"
+                        android:contentDescription="@string/app_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_28sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="start|center"
+                        android:text="@string/search_in_store"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:background="@color/grey_300" />
+
+            <LinearLayout
+                android:id="@+id/layout_bottom_menu_add_to_fav_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_bottom_menu_add_to_fav_container"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:background="@drawable/ic_favorite_border_primary_color_48dp"
+                        android:contentDescription="@string/app_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_bottom_menu_add_to_fav_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_28sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="start|center"
+                        android:text="@string/add_to_fav"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:background="@color/grey_300" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_bottom_menu_store_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:background="@drawable/ic_error_outline_black_48dp"
+                        android:contentDescription="@string/app_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_22sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="start|center"
+                        android:text="@string/store_info"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_18sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="start|center"
+                        android:text="@string/adds_and_more"
+                        android:textAllCaps="false"
+                        android:textColor="@color/grey_400"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:background="@color/grey_300" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</FrameLayout>

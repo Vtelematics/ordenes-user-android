@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activities.AppSplashScreen">
+
+    <ImageView
+        android:id="@+id/img_splash_screen"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image"
+        android:background="@drawable/logo_white_bg_transparent_1"
+         /><!-- android:src="@drawable/screen"-->
+
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:padding="@dimen/_4sdp"
+         android:textColor="@color/white"
+         android:textSize="@dimen/_30sdp"
+         android:text="@string/app_name"
+         android:textStyle="bold" />-->
+
+
+</FrameLayout>

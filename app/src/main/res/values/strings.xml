@@ -1,0 +1,499 @@
+<resources>
+
+    <!--dont translate "product_count_x" string as below:- -->
+    <string name="product_count_x">x</string>
+
+    <string name="app_name">Ordenes</string>
+
+    <string name="ok">OK</string>
+    <string name="image">image</string>
+
+    <string name="google_server_api_key">AIzaSyB061TxE72HOklgYEMmgNEJVES09Q4x5sc</string>
+<!--    <string name="google_server_api_key">AIzaSyDKCB26rzkk4P2rMxMGLOUVRjsCDZTy5ok</string>-->
+
+    <!--List Home-->
+    <string name="delivering_to">Delivering to</string>
+    <string name="mins">mins</string>
+    <string name="minutes">minutes</string>
+    <string name="min">Minimum Order</string>
+    <string name="min_delivery_fee">Min Delivery Fee</string>
+    <string name="busy">Busy</string>
+    <string name="see_all">View All</string>
+    <string name="featured_products">Popular Food</string>
+    <string name="new_restaurants">New Restaurants</string>
+    <string name="featured_restaurants">Featured Restaurants</string>
+    <string name="deal_of_the_day">Deal of the day</string>
+    <string name="browse_">Browse</string>
+    <string name="browse">Browse or search</string>
+    <string name="see_all_restaurant">See all restaurants</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="hey">Hey,</string>
+    <string name="good_morning">Good morning</string>
+    <string name="good_afternoon">Good afternoon</string>
+    <string name="good_evening">Good evening</string>
+    <string name="top_picks">Top picks</string>
+    <string name="best_offer">Best offer %</string>
+    <string name="what_would_you_like_to_drink">What would you like to drinks?</string>
+    <string name="within">within</string>
+    <string name="search">Search</string>
+    <string name="notorious_brands">Notorious Brands</string>
+    <string name="there_is_no_search_item_found">There is no search item found!</string>
+    <string name="choose_delivery_location">Choose delivery location</string>
+
+    <string name="delivery_to_dif_loc_1">Delivery to different location</string>
+    <string name="delivery_to_dif_loc_2">Choose location on the map</string>
+    <string name="hey_there_1">Hey there!</string>
+    <string name="hey_there_2">Login or create a account for</string>
+    <string name="hey_there_3">a faster ordering experience.</string>
+    <string name="log_in">Log in</string>
+
+
+    <!--Api call-->
+    <string name="process_failed_please_try_again">Process Failed, Please Try Again!</string>
+
+    <!--Network check-->
+    <string name="network_connection_not_available_please_try_again"><CENTER>Network Connection not available.\nPlease Try Again.</CENTER></string>
+    <string name="there_is_no_network_connection">There is no network connection!</string>
+    <string name="retry">Retry</string>
+    <string name="closed">Closed</string>
+    <string name="there_is_no_restaurant_available">There is no restaurant available!</string>
+
+    <!--Progress dialogue-->
+    <string name="loading_please_wait">Loading please wait...</string>
+
+    <string name="search_restaurant_products">Search restaurant products</string>
+    <string name="close">Close</string>
+    <string name="view_basket">View Basket</string>
+    <string name="search_in_store">Search in store</string>
+    <string name="add_to_fav">Add to favourites</string>
+    <string name="store_info">Store info</string>
+    <string name="adds_and_more">Address and more</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="info">Info</string>
+    <string name="reviews">Reviews</string>
+    <string name="mins_">Mins</string>
+    <string name="in">In</string>
+    <string name="km">km</string>
+    <string name="price_on_selection">Price on selection</string>
+    <string name="the_menu_item_list_empty">The menu item list is empty!</string>
+    <string name="there_is_no_item_found">There is no item found!</string>
+
+    <!--Api call-->
+    <!--<string name="delivery_not_available_for_this_location">Delivery not available for this location.</string>-->
+    <string name="service_not_available_for_this_location">Service not available for this location.</string>
+    <!--All restaurants page-->
+    <string name="filters">Filters</string>
+    <string name="cuisines">Cuisines</string>
+    <string name="popular_offers">Popular Offers</string>
+    <string name="all_restaurant">All Restaurants</string>
+    <string name="ar_delivery">Delivery -</string>
+    <string name="ar_filter_clear_all">Clear all</string>
+    <string name="ar_filter_apply">Apply</string>
+    <string name="ar_filter_popular_filters">Popular filters</string>
+    <string name="ar_filter_deals_and_offers">Deals and offers</string>
+    <string name="ar_filter_pf_fast_delivery">Fast delivery</string>
+    <string name="ar_filter_pf_free_delivery">Free delivery</string>
+    <string name="ar_filter_pf_price_range">Price range</string>
+    <string name="ar_filter_pf_top_rated">Top rated</string>
+    <string name="ar_filter_pf_no_min_order">No minimum order</string>
+    <string name="ar_filter_pf_no_newly_added">Newly added</string>
+    <string name="ar_filter_do_free_delivery">Free delivery</string>
+    <string name="ar_filter_do_open_outlets">Open outlets</string>
+    <string name="ar_filter_do_online_payments">Online payments</string>
+    <string name="ar_filter_do_offers_coupons">Offers/Coupons</string>
+    <string name="ar_filter_do_sort_by">Sort by</string>
+    <string name="ar_filter_do_a_z">A to Z</string>
+    <string name="ar_filter_do_order_amount">Order amount</string>
+    <string name="ar_filter_do_rating">Rating</string>
+
+    <string name="ar_cuisines_search_hint">Search cuisines</string>
+    <string name="ar_cuisines_search_lst_empty_msg">There is no cuisines.</string>
+    <string name="ar_cuisines_selected">cuisines selected</string>
+    <string name="sr_search_restaurants_hint">Search restaurants</string>
+    <string name="sr_search_restaurants_lst_empty_msg">There is no restaurants.</string>
+
+    <!--Delivery location-->
+    <string name="dl_search_hint">Search for your address…</string>
+    <string name="confirm_your_location">Confirm Your Location</string>
+    <string name="address">Address</string>
+    <string name="delivery_here">Delivery here</string>
+    <string name="gps_enable_msg">You need to activate location service to use this feature. Please turn on network or GPS mode in location settings</string>
+    <string name="setting">Setting</string>
+    <string name="cancel">Cancel</string>
+    <string name="please_allow_the_device_location_access">Please allow the device location access to proceed further.</string>
+    <string name="please_select_your_address">Please select your address!</string>
+    <string name="current_location">Current location</string>
+    <string name="recent_searched_places">Recent Searched Places</string>
+
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="guest">Guest</string>
+
+    <string name="forgot_password">Forgot password</string>
+    <string name="signup">Signup</string>
+    <string name="password">Password</string>
+    <string name="forgot_password_btn">Forgot password?</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="please_enter_your_mobile_no">Please enter your mobile number.</string>
+    <string name="please_enter_your_pwd">Please enter your password.</string>
+
+    <!-- Forgot password page -->
+    <string name="submit">Submit</string>
+    <string name="You_not_a_exists_user">You must be a registered user to reset your password.</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="please_enter_otp">Please enter OTP.</string>
+    <string name="otp_sent_to_your_mobile_number">The OTP sent to your mobile number</string>
+    <string name="please_enter_correct_otp">Please enter correct OTP.</string>
+    <string name="enter_4_digit">Enter the 6-digit code sent to you at </string>
+    <string name="i_did_not_received_code_prefix">I did not receive a code(</string>
+    <string name="i_did_not_received_code_postfix">)</string>
+    <string name="resend">Resend</string>
+    <string name="enter_you_new_pwd">Enter your new password</string>
+    <string name="confirm_pwd">Confirm password</string>
+    <string name="please_enter_the_confirm_pwd">Please enter the confirm password.</string>
+    <string name="pwd_and_confirm_pwd_not_match">The password and confirm password does not match.</string>
+    <string name="pwd_updated_success_fully">Password updated successfully.</string>
+    <string name="logout">Logout</string>
+
+    <!--Register with otp page-->
+    <string name="enter_you_details">Enter your details</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="please_enter_first_name">Please enter your first name.</string>
+    <string name="please_enter_last_name">Please enter your last name.</string>
+    <string name="please_enter_email">Please enter your email.</string>
+    <string name="enter_valid_email_id">Enter valid email.</string>
+    <string name="register_agreement">I have read and agree to the Terms and conditions</string>
+    <string name="privacy_policy_agree"> Privacy Policy</string>
+    <string name="terms_and_conditions_agree">Terms and conditions</string>
+    <string name="and">and</string>
+    <string name="please_agree_to_terms_and_conditions">Please agree to the terms and conditions.</string>
+    <string name="You_already_exists_user">Your already a exists user.</string>
+
+
+    <string name="set_delivery_location">Set delivery location</string>
+    <string name="restaurant_area">Restaurant Area</string>
+    <string name="opening_hours">Opening hours</string>
+    <string name="minimum_order">Minimum order</string>
+    <string name="pre_order">Pre-order</string>
+    <string name="delivery_time">Delivery time</string>
+    <string name="payment_options">Payment options</string>
+    <string name="required">Required</string>
+    <string name="optional">Optional</string>
+    <string name="menu_option__choose">Choose</string>
+    <string name="menu_option__items">items</string>
+    <string name="menu_option__and">and</string>
+    <string name="menu_option__choose_any_one_option">Choose any one option</string>
+    <string name="please_select_required_options">Please select required options!</string>
+    <string name="menu_option__choose_minimum">Choose minimum</string>
+    <string name="menu_option__and_maximum">and maximum</string>
+    <string name="menu_option__items_in">items in</string>
+    <string name="is_currently">is currently</string>
+    <string name="please_try_again_later">Please try again later!</string>
+    <string name="add">Add</string>
+    <string name="to_cart">to cart</string>
+    <string name="delete">Delete</string>
+    <string name="start">Start</string>
+    <string name="agree">Agree</string>
+    <string name="start_a_new_basket">Start a new basket</string>
+
+
+    <!-- cart list page -->
+    <string name="Basket">Basket</string>
+    <string name="cl_cart_list_lst_empty_msg">Your basket is empty.</string>
+    <string name="checkout">Checkout</string>
+    <string name="add_items">Add items</string>
+    <string name="payment_summary">Payment summary</string>
+    <string name="do_you_want_remove_this_item">Do you want to remove this item?</string>
+    <string name="remove">Remove</string>
+    <string name="add_coupon_code">Add Coupon</string>
+    <string name="coupon">Coupon</string>
+    <string name="apply">Apply</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="please_enter_the_coupon_code">Please enter the coupon code.</string>
+    <string name="additional_request">Additional request</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="enter_your_note">Your note</string>
+    <string name="cl_clear">Clear</string>
+    <string name="please_login_to_proceed_further">Please login to proceed further.</string>
+    <string name="out_of_stock">Out of stock.</string>
+
+    <!--checkout-->
+    <string name="save_on_your_order">Save on your order</string>
+    <string name="add_coupon">Add coupon</string>
+    <string name="remove_coupon">Remove coupon</string>
+    <string name="pay_with">Pay with</string>
+    <string name="place_order">Place order</string>
+    <string name="co_contact_less_delivery">Contactless Delivery</string>
+    <string name="co_leave_order_msg">Leave order at doorstep and inform me.</string>
+    <string name="co_cld_not_applicable_msg">Not applicable with cash payment.</string>
+    <string name="no_coupons_found">No coupons available.</string>
+    <string name="read_details">Read Details</string>
+    <string name="coupon_code">Coupon code</string>
+    <string name="coupon_applied_successfully">Coupon applied successfully.</string>
+    <string name="remove_coupon_confirmation_msg">Do you want to remove the applied coupon?</string>
+    <string name="co_adds_edit">Edit</string>
+    <string name="co_adds_block">Block</string>
+    <string name="co_adds_street">Street</string>
+    <string name="co_adds_building">Building</string>
+    <string name="co_adds_way">Way</string>
+    <string name="co_adds_floor">Floor</string>
+    <string name="co_adds_door_no">Door no</string>
+    <string name="co_please_select_delivery_address">Please select delivery address.</string>
+    <string name="co_uncheck_contact_less_delivery_for_cod_msg">Uncheck contactless delivery to use cash payment.</string>
+    <string name="co_there_is_no_checkout_adds_available">There is no checkout address available!</string>
+    <string name="co_add_adds">Add Address</string>
+    <string name="coupon_error_msg_for_guest">Coupons are valid for registered customers only.Please login or create an account to save on your order.</string>
+    <string name="co_get_code">Get code</string>
+
+    <!--check out success -->
+    <string name="thank_you">Thank You!</string>
+    <string name="co_s_continue">Continue</string>
+    <string name="str_1">You may please check your Order details by going to My Orders page.
+        We will keep you updated about the progress of your order through Notification and E-Mails.</string>
+    <string name="str_2">If you have any queries you may contact us over E-Mail or Toll-Free</string>
+    <string name="str_3">Thank You for Shopping with Ordenes!</string>
+
+    <string name="co_s_order_placed_msg">Your order has been placed!</string>
+
+    <!--check out address -->
+    <string name="co_al_saved_address">Saved Addresses</string>
+    <string name="co_al_address_empty_msg">There is no addresses found.</string>
+    <string name="do_you_want_remove_this_address">Do you want to remove this address?</string>
+    <string name="co_al_new_address">New Address</string>
+    <string name="co_al_edit_address">Edit Address</string>
+
+    <!--check out address add edit -->
+    <string name="caa_landline_no">Landline number(optional)</string>
+    <string name="caa_change_location">Change location</string>
+    <string name="caa_area">Area</string>
+    <string name="caa_address_type">Address type</string>
+    <string name="caa_block">Block</string>
+    <string name="caa_street">Street</string>
+    <string name="caa_building">Building</string>
+    <string name="caa_floor">Floor</string>
+    <string name="caa_apartment_no">Apartment No</string>
+    <string name="caa_additional_directions">Additional directions</string>
+    <string name="caa_save_and_continue">Save and continue</string>
+    <string name="please_select_country_code">Please select the country code.</string>
+    <string name="please_select_the_area">Please select the area.</string>
+    <string name="please_select_the_address_type">Please select the address type.</string>
+    <string name="please_enter_your_street">Please enter your street.</string>
+    <string name="please_enter_your_building">Please enter your building.</string>
+    <string name="please_enter_your_house">Please enter your house.</string>
+    <string name="please_enter_your_office">Please enter your office.</string>
+    <string name="please_enter_your_floor">Please enter your floor.</string>
+    <string name="please_enter_your_apartment_no">Please enter your apartment number.</string>
+
+
+    <string name="caa_house">House</string>
+    <string name="caa_apartment">Apartment</string>
+    <string name="caa_office">Office</string>
+    <string name="caa_confirm_location">Confirm location</string>
+    <string name="caa_please_wait">Please wait.</string>
+
+    <!--Home menu list-->
+    <string name="view_account">View Account</string>
+    <string name="login_to">Login to</string>
+    <string name="change_password">Change Password</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="my_addresses">My Addresses</string>
+    <string name="my_orders">My Orders</string>
+    <string name="contact_form">Contact Form</string>
+    <string name="name">Name</string>
+    <string name="mobile_">Mobile</string>
+    <string name="message">Message</string>
+
+    <!--Contact us-->
+    <string name="please_enter_valid_email_address">Please enter a valid email address.</string>
+    <string name="please_enter_your_mobile_number">Please enter your mobile number.</string>
+    <string name="please_enter_your_email">Please enter your email.</string>
+    <string name="please_enter_your_message">Please enter your message.</string>
+    <string name="please_enter_your_name">Please enter your name.</string>
+
+    <!-- change password -->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="please_enter_your_old_pwd">Please enter your old password.</string>
+    <string name="please_enter_your_new_pwd">Please enter your new password.</string>
+
+    <!-- My orders page -->
+    <string name="mol_orders_list_empty_msg">There is no orders found.</string>
+    <string name="mol_order_id">Order ID:</string>
+    <string name="mol_order_date">Order Date:</string>
+
+    <!-- My order info -->
+    <string name="my_orders_info">My Order Information</string>
+    <string name="order_details">Order Details</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="my_orders_list_order_id">Order Id</string>
+    <string name="my_orders_list_order_status">Order Status</string>
+    <string name="my_orders_list_order_date">Order date</string>
+    <string name="my_orders_list_order_amt">Amount</string>
+    <string name="my_orders_list_order_more_details">More Details</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="track_order">Track my order</string>
+    <string name="cancel_order">Cancel order</string>
+    <string name="shipping_address">Shipping Address:</string>
+    <string name="order_history_payment_method">Payment Method</string>
+
+    <!--My order info Write review -->
+    <string name="rate_restaurant">Rate </string>
+    <string name="leave_a_comment">Your comment</string>
+    <string name="rate_rest_by_aspects">Rate the following aspects based on your experience</string>
+
+
+    <!-- Edit Profile page -->
+    <string name="ep_save">Save</string>
+    <string name="permission_denied">Permission denied!</string>
+    <string name="service_not_available_for_current_area">Service not available for current area.</string>
+
+    <!-- Grocery category main page -->
+    <string name="gc_mp_no_details_available_msg">There is no details available.</string>
+    <string name="gc_mp_no_stores_available_msg">There is no stores available.</string>
+    <string name="gc_mp_search_items_hint">Search items</string>
+    <string name="gc_mp_search_grocery_hint">Search groceries</string>
+    <string name="gc_mp_delivery">Delivery</string>
+    <string name="gc_mp_min_order">Min order</string>
+    <string name="gc_mp_shop_by_category">Shop by category</string>
+    <string name="gc_mp_view_all">View all</string>
+    <string name="gc_mp_categories">Categories</string>
+    <string name="gc_mp_featured_products">Featured products</string>
+
+    <!-- Grocery all featured products -->
+    <string name="g_afp_search_products_lst_empty_msg">There is no products.</string>
+    <string name="add_to_basket">Add to basket</string>
+
+    <!-- Grocery all stores -->
+    <string name="gas_search_products_or_stores">Search for products or stores</string>
+    <string name="gas_grocery_stores">Grocery stores</string>
+
+
+    <!-- Product details -->
+    <string name="pd_is_not_available">is not available for</string>
+    <string name="pd_at_this_time">at this time.You can continue adding items to your basket and order when delivery service is resumed.</string>
+
+    <string name="empty_products_list">Product not available in this category.</string>
+
+    <string name="rating">Rating</string>
+
+    <string name="quality_of_product">Quality of product</string>
+
+    <string name="value_of_money">Value for money</string>
+    <string name="order_packaging">Order packaging</string>
+
+    <string name="co_verify_mobile_no">Verify mobile number</string>
+    <string name="co_send_sms_msg">We will send you on SMS with the verification \n code on the number above.</string>
+    <string name="co_change">Change</string>
+
+    <string name="ratings">ratings</string>
+    <string name="no_rating">No rating</string>
+    <string name="based_on">Based on </string>
+    <string name="please_rate_the">Please rate the</string>
+    <string name="please_rate_for_delivery_time">Please rate delivery time.</string>
+    <string name="please_rate_for_qo_product">Please rate quality of product.</string>
+    <string name="please_rate_for_vf_money">Please rate value for money.</string>
+    <string name="please_rate_for_order_packaging">Please rate order packaging.</string>
+
+    <string name="g_ass_grocery">Grocery</string>
+    <string name="g_ass_products">Products</string>
+    <string name="g_ass_search_products">Search products</string>
+    <string name="g_ass_search_grocery">Search grocery</string>
+    <string name="g_ass_search_grocery_lst_empty_msg">There is no grocery.</string>
+
+    <string name="change_language">Change Language</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_account_warning_msg">Are you sure,do you want to delete your account? If you delete your account,you will permanently lose your profile.</string>
+
+    <string name="choose_language">Choose Language</string>
+    <string name="change">Change</string>
+
+    <string name="co_there_is_no_payment_methods_available">There is no payment methods available!</string>
+    <string name="ar_filter_lst_empty_msg">There is no filters.</string>
+    <string name="ar_restaurant_lst_empty_msg">There is no restaurants.</string>
+    <string name="oc_order_confirmation">Order Confirmation</string>
+    <string name="order_information">Order Information</string>
+
+<!--    <string name="oc_sending_your_order_to">Sending your order to</string>-->
+
+    <string name="oc_sending_your_order_to">Your order is </string>
+
+    <string name="your_order_is">Your order is </string>
+    <string name="on_the_way">On the way</string>
+    <string name="oc_order_id">Order id</string>
+    <string name="oc_order_amt">Order amount</string>
+    <string name="oc_payment">Payment</string>
+
+    <string name="oc_estimated_delivery_time">Estimated delivery time</string>
+
+    <string name="products_not_available_in_this_store">Products not available in this store.</string>
+    <string name="grocery_not_available_in_this_location">Grocery not available in this location.</string>
+
+    <string name="all_vendors">All Vendors</string>
+    <string name="ar_vendor_lst_empty_msg">There are no vendors.</string>
+    <string name="oc_rider">rider</string>
+    <string name="oc_finding_available_rider">Finding an available rider</string>
+    <string name="track_the_rider">Track the rider</string>
+    <string name="track_order_">Track Order</string>
+    <string name="locate_vendor">Locate Vendor</string>
+    <string name="please_install_gmap">Please Install Google Maps.</string>
+    <string name="pick_up">Pickup</string>
+    <string name="delivery">Delivery</string>
+    <string name="mobile">Mobile</string>
+    <string name="order_type">Order type</string>
+    <string name="pick_up_address">Pickup Address</string>
+    <string name="please_select_payment_address">Please select payment method.</string>
+    <string name="approximately_delivery_time_is">Approximately delivery time is</string>
+    <string name="approximately_pickup_time_is">Approximately pickup time is</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="removed_from_the_wishlist">Removed from your favourites</string>
+    <string name="added_to_the_wishlist">Added to your favourites</string>
+    <string name="view_all">View All</string>
+    <string name="favourites_">Favourites</string>
+    <string name="my_favourites">My Favourites</string>
+    <string name="reason_for_cancel">Reason for cancellation</string>
+    <string name="your_comment">Your comment</string>
+    <string name="schedule">Schedule your order</string>
+    <string name="schedule_date">Schedule date</string>
+    <string name="select_delivery_time">Select delivery time</string>
+    <string name="restaurant_closed">Vendor closed</string>
+    <string name="restaurant_busy">Vendor Busy</string>
+    <string name="store_closed">Store closed</string>
+    <string name="store_busy">Store Busy</string>
+    <string name="restaurant_closed_msg_1">We\'re sorry, </string>
+    <string name="restaurant_closed_msg_2">is currently closed and is not accepting orders at this time. You can continue adding items to
+        your basket and order when vendor is open.</string>
+    <string name="restaurant_busy_msg_2">is currently busy and is not accepting orders at this time. You can continue adding items to
+        your basket and order when vendor is open.</string>
+    <string name="store_closed_msg_2">is currently closed and is not accepting orders at this time. You can continue adding items to
+        your basket and order when store is open.</string>
+    <string name="store_busy_msg_2">is currently busy and is not accepting orders at this time. You can continue adding items to
+        your basket and order when store is open.</string>
+    <string name="min_cart_value_is">Min cart value is</string>
+    <string name="confirm_delivery_address">Confirm delivery address</string>
+
+    <string name="something_was_broken">Something was broken</string>
+    <string name="Im_not_any_invites">I\'m not getting any invites</string>
+    <string name="I_have_privacy">I have a privacy concern</string>
+    <string name="other">Other</string>
+
+    <string name="confirm_ac_deletion">Confirm Account Deletion</string>
+
+    <string name="pls_enter_atleast_5_characters">Please enter atleast 5 characters</string>
+    <string name="we_re_sorry">We\'re sorry to see you go</string>
+    <string name="are_you_sure">Are you sure, do you want delete your account?</string>
+
+
+    <string name="transaction_failed">Transaction Canceled</string>
+    <string name="enter_your_airtel_mobile_number">Enter your Airtel mobile number</string>
+
+</resources>

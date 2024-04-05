@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragments.MyOrderInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/img_moi_back"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center|start"
+                android:gravity="center"
+                android:background="@drawable/svg_arrow_back_48dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="@string/my_orders_info"
+                android:textColor="@color/grey_900"
+                android:textSize="@dimen/_12sdp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lay_mol_my_orders_list_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_6sdp">
+
+        <ScrollView
+            android:id="@+id/scroll_view_moi_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+           >
+
+            <LinearLayout
+                 android:id="@+id/lay_moi_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:gravity="start|bottom"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/order_details"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                />
+                            <!--    android:layout_marginTop="@dimen/_6sdp"-->
+
+                            <!-- -->
+
+                            <TextView
+                                android:id="@+id/tv_moi_write_review"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_weight="0.6"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:background="@drawable/bg_ar_filter_apply"
+                                android:gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/write_a_review"
+                                android:textColor="@color/white_for_dark"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold"
+                                android:visibility="visible"/>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.70dp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:background="@color/grey_600" />
+
+                        <LinearLayout
+                            android:id="@+id/lay_moi_restaurant_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_2sdp">
+
+                            <TextView
+                                android:id="@+id/tv_moi_restaurant_name"
+                                android:layout_width="@dimen/_108sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:gravity="start|end"
+                                android:text="@string/restaurant_name"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="@dimen/_4sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:text=":"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/tv_moi_restaurant_name_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_moi_order_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_2sdp">
+
+                            <TextView
+                                android:id="@+id/tv_moi_order_id_title"
+                                android:layout_width="@dimen/_108sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:gravity="start|end"
+                                android:text="@string/my_orders_list_order_id"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="@dimen/_4sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:text=":"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/tv_moi_order_id_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_2sdp">
+
+
+                            <TextView
+                                android:id="@+id/tv_moi_order_status_title"
+                                android:layout_width="@dimen/_108sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:gravity="start|end"
+                                android:text="@string/my_orders_list_order_status"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+                            <TextView
+                                android:layout_width="@dimen/_4sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:text=":"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/tv_moi_order_status_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+                            <!--  android:text="Pending"-->
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_2sdp">
+
+                            <TextView
+                                android:id="@+id/tv_moi_order_date_title"
+                                android:layout_width="@dimen/_108sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:gravity="start|end"
+                                android:text="@string/my_orders_list_order_date"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                />
+
+                            <TextView
+                                android:layout_width="@dimen/_4sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:text=":"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/tv_moi_order_date_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+                            <!--  android:text="15-07-2017 15:59"-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/schedule_date_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_2sdp">
+
+                            <TextView
+                                android:id="@+id/tv_moi_schedule_date_title"
+                                android:layout_width="@dimen/_108sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:gravity="start|end"
+                                android:text="@string/schedule_date"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"/>
+
+                            <TextView
+                                android:layout_width="@dimen/_4sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:text=":"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/tv_moi_schedule_date_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+                            <!--  android:text="15-07-2017 15:59"-->
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_2sdp">
+
+                            <TextView
+                                android:id="@+id/tv_moi_order_type_title"
+                                android:layout_width="@dimen/_108sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:gravity="start|end"
+                                android:text="@string/order_type"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                />
+
+                            <TextView
+                                android:layout_width="@dimen/_4sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:text=":"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"/>
+
+                            <TextView
+                                android:id="@+id/tv_moi_order_type_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:gravity="start|center"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:gravity="center"
+                            android:visibility="visible"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_moi_track_order"
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:background="@drawable/bg_ar_filter_apply"
+                                android:gravity="center"
+                                android:textColor="@color/white_for_dark"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/tv_moi_cancel_oder"
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_23sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:background="@drawable/bg_cl_add_items"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:text="@string/cancel_order"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_11sdp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:id="@+id/lay_moi_order_shipping_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/tv_moi_order_shipping_address_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:gravity="start|center"
+                            android:text="@string/shipping_address"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            android:fontFamily="@font/poppins_regular" />
+
+
+                        <TextView
+                            android:id="@+id/tv_moi_order_shipping_add_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="start|center"
+                            android:textColor="@color/grey_700"
+                            android:textSize="@dimen/_11sdp" />
+                        <!--  android:text="15-07-2017 15:59"-->
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_moi_order_products_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_marginRight="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:gravity="center"
+                            android:orientation="vertical"/>
+
+
+                       <!-- <ImageView
+                            android:id="@+id/img_moi_order_products_dotted_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layerType="software"
+                            android:src="@drawable/line_restaurant_menu_grey_dotted"
+                            android:visibility="visible"
+                            />-->
+
+
+
+                        <LinearLayout
+                            android:id="@+id/lay_moi_order_totals_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <!--android:layout_height="@dimen/_116sdp"-->
+
+                        </LinearLayout>
+
+                        <!--<ImageView
+                            android:id="@+id/img_moi_below_order_totals_dotted_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layerType="software"
+                            android:src="@drawable/line_restaurant_menu_grey_dotted"
+                            android:visibility="visible"
+                            />-->
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_2sdp"
+                            android:background="@drawable/dot_line"
+                            android:layerType="software"
+                            android:layout_marginBottom="@dimen/_16sdp"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:layout_marginLeft="@dimen/_12sdp"
+                            android:layout_marginRight="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/layout_moi_payment_made_by"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:text="@string/order_history_payment_method"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/tv_moi_payment_made_by"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_32sdp"
+                                android:gravity="center"
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_11sdp"
+                                android:fontFamily="@font/poppins_regular"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

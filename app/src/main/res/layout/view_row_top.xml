@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tv_restaurant_menu_option_Product_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:contentDescription="@string/image"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pd_options_product_title_pg_color"
+        android:gravity="start|center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_restaurant_menu_option_Product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="start|center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tv_restaurant_menu_option_Product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="start"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_10sdp" />
+        <!--  android:text=" Fast food and takeaway (take-out) outlets with counter service are not normally referred to as restaurants. Outside North America, the terms fast casual dining restaurants, family style, and casual dining are not used and distinctions among different kinds of restaurants are often not the same."-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Product_title_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="start|center"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/tv_Product_title_price_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="start|center"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/lay_qty_decrease"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/baseline_remove_primary_color_24dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_option_qty"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/lay_qty_increase"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="start|center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/baseline_add_primary_color_24dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/grey_200" />
+
+</LinearLayout>

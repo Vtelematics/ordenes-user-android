@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_menu_option_dialog_value_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_checkbox_menu_option_dialog_value_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:gravity="start|center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/option_value_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_checkbox_menu_option_dialog_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_checkbox_menu_option_dialog_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start|center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_9sdp" />
+            <!-- android:text="$10.00"-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_menu_option_dialog_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:buttonTint="@color/colorPrimary"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center" />
+            <!-- android:text="$10.00"-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_radio_btn_menu_option_dialog_value_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:gravity="start|center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/option_value_name_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:buttonTint="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_radio_btn_menu_option_dialog_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_radio_btn_menu_option_dialog_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start|center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_9sdp" /><!-- android:text="$10.00"-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/radio_btn_menu_option_dialog_value"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:gravity="center"-->
+<!--                app:buttonTint="@color/colorAccent"-->
+<!--                android:visibility="gone"/>-->
+
+            <ImageView
+                android:id="@+id/radio_btn_menu_option_dialog_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_button_unchecked"/>
+            <ImageView
+                android:id="@+id/radio_btn_menu_option_dialog_value_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_button_check_com"
+                android:visibility="gone"/>
+
+
+            <!--            <CheckBox-->
+<!--                android:id="@+id/checkbox"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:buttonTint="@color/colorPrimary"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                style="@android:style/Widget.CompoundButton.RadioButton"-->
+<!--                android:gravity="center" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_menu_option_dialog_parent_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white_transparent"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/mBottomLine"
+        android:background="@color/grey_200"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+
+</LinearLayout>

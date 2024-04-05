@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_co_coupon_code_item"
+    android:layout_margin="@dimen/_4sdp">
+    <!-- android:background="@drawable/bg_round_white_curve"-->
+
+    <!--<TextView
+        android:id="@+id/tv_coupon_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        />-->
+
+    <TextView
+        android:id="@+id/tv_coupon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        />
+
+<!--
+    <LinearLayout
+        android:id="@+id/layout_coupon_valid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_coupon_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            />
+
+    </LinearLayout>
+-->
+
+    <!--<TextView
+        android:id="@+id/tv_readdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_600"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:text="@string/read_details"
+        />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.80dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_6sdp"
+       >
+
+        <LinearLayout
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_dashed_border_medium_round"
+            android:padding="@dimen/_1sdp"
+            android:layout_margin="@dimen/_4sdp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_round_light_theme">
+<!--                    android:alpha="0.3"-->
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tv_coupon_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:text=""
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_coupon_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:gravity="end"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+            android:textAllCaps="true"
+            />
+
+    </LinearLayout>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.80dp"
+        android:background="@color/grey_400"
+        android:layout_marginTop="@dimen/_7sdp"
+        />
+
+    <TextView
+        android:id="@+id/tv_coupon_not_valid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        />-->
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_7sdp"
+        android:background="@color/grey_300"
+        android:layout_marginTop="@dimen/_7sdp"
+        />-->
+
+</LinearLayout>

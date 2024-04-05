@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lay_row_cuisines"
+    android:layout_marginEnd="@dimen/_12sdp"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/_6sdp">
+    <!--android:layout_marginTop="@dimen/_4sdp"-->
+    <!-- android:layout_marginBottom="@dimen/_4sdp"-->
+
+    <FrameLayout
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_105sdp"
+        android:orientation="vertical">
+        <!-- android:background="@drawable/bg_home_cuisines_bg"-->
+
+        <ImageView
+            android:id="@+id/iv_home_restaurant_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tv_home_restaurant_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_gravity="start|top"
+            android:text="zxzxcfzxcc"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_bold"/>
+        <!--android:text="Burger king kings cross"-->
+
+    </FrameLayout>
+
+
+
+</androidx.cardview.widget.CardView>

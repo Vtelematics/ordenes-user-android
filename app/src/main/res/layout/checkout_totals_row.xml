@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_ct_totals_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tv_cl_total_data_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:weightSum="4">
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/tv_ct_total_title"
+            android:layout_width="0dp"
+            android:textAlignment="viewStart"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="@color/ar_filter_title_text_color"
+            android:textSize="@dimen/_11sdp" /><!-- android:text="SubTotal"-->
+
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:id="@+id/tv_ct_total_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="@color/ar_filter_title_text_color"
+            android:textSize="@dimen/_11sdp" />
+        <!-- android:text="US$13.40"
+          android:textAlignment="viewEnd"-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

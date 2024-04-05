@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_restaurant_cart_totals_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/tv_cl_total_title_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="start|center">
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/tv_cl_total_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/ar_filter_title_text_color"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_cl_total_data_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="end|center"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="hi"
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/tv_cl_total_data"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/ar_filter_title_text_color"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/tv_cl_total_data_currency_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight=".5">
+
+            <TextView
+                android:text="hi"
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/tv_cl_total_data_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/ar_filter_title_text_color"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

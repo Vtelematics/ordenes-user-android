@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:orientation="vertical">
+    <!-- android:background="@color/grey_300"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cl_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:textColor="@color/ar_filter_title_text_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+            <!-- android:text="Original Pork Fun"-->
+
+
+            <TextView
+                android:id="@+id/tv_cl_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:textColor="@color/cl_options_txt_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible" />
+            <!-- android:text="Original Pork Fun"-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cl_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start|center"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_menu_list_child_amt_when_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start|center"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                     android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_22sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_2sdp">
+
+                    <ImageButton
+                        android:id="@+id/img_cl_remove"
+                        android:layout_width="@dimen/_21sdp"
+                        android:layout_height="@dimen/_21sdp"
+                        android:background="@color/black_transparent_0"
+                        android:contentDescription="@string/image"
+                        android:foregroundGravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/baseline_remove_primary_color_18dp"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:id="@+id/tv_cl_item_count"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:padding="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:textColor="@color/ar_filter_title_text_color"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+                    <!--  android:text="523"-->
+
+                    <ImageButton
+                        android:id="@+id/img_cl_add"
+                        android:layout_width="21dp"
+                        android:layout_height="@dimen/_21sdp"
+                        android:background="@color/black_transparent_0"
+                        android:contentDescription="@string/image"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/baseline_add_primary_color_18dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_cl_item_stock_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_11sdp"
+                android:text="@string/out_of_stock"
+                android:textStyle="bold" />
+            <!--  android:text="$13.40"-->
+
+        </LinearLayout>
+
+        <!--next ui -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_cl_restaurant_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:shapeAppearanceOverlay="@style/ImageView.Corner" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_cl_item_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="start|center"
+        android:paddingStart="@dimen/_2sdp"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:text="Its a error msg ."
+        android:textColor="@color/red"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_cl_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:background="@color/grey_300"
+        android:visibility="visible" />
+
+
+</LinearLayout>
+
+    <!--                       <LinearLayout
+                               android:id="@+id/lay_restaurant_cart_row_add_remove"
+                               android:layout_width="@dimen/_100sdp"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal"
+                               android:layout_gravity="end|center"
+                               android:padding="@dimen/_2sdp">
+
+                               <ImageButton
+                                   android:id="@+id/img_btn_restaurant_cart_row_remove"
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_weight="1"
+                                   android:contentDescription="@string/image"
+                                   android:foregroundGravity="center"
+                                   android:background="@color/black_transparent_0"
+                                   android:src="@drawable/svg_remove_custom_color_48dp" />
+
+                               <TextView
+                                   android:id="@+id/tv_restaurant_cart_row_item_count1"
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_margin="@dimen/_1sdp"
+                                   android:layout_weight="1"
+                                   android:gravity="center"
+                                   android:text="5"
+                                   android:padding="@dimen/_1sdp"
+                                   android:textColor="@color/ar_filter_title_text_color"
+                                   android:textSize="@dimen/_10sdp" />
+
+                               <ImageButton
+                                   android:id="@+id/img_btn_restaurant_cart_row_add"
+                                   android:layout_width="0dp"
+                                   android:layout_height="wrap_content"
+                                   android:layout_weight="1"
+                                   android:contentDescription="@string/image"
+                                   android:background="@color/black_transparent_0"
+                                   android:src="@drawable/svg_add_custom_color_48dp" />
+
+
+                           </LinearLayout>
+    -->

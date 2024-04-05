@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--  android:background="@color/list_home_bg"-->
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingStart="@dimen/_4sdp"
+        android:orientation="horizontal">
+        <!--android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"-->
+
+        <TextView
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:id="@+id/tv_title_top_pick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_view_all_product_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/see_all"
+            android:background="@drawable/bg_app_bar_pick_up_delivery"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+        <!--  android:background="@drawable/bg_view_all"-->
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_home_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+
+    <!-- <android.support.constraint.Guideline
+         android:id="@+id/guideline"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         app:layout_constraintGuide_percent="0.7" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <View
+        android:background="@color/home_new_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp" />
+
+</LinearLayout>

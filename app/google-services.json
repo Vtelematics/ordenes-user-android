@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "785849950960",
+    "firebase_url": "https://proven-electron-356012-default-rtdb.firebaseio.com",
+    "project_id": "proven-electron-356012",
+    "storage_bucket": "proven-electron-356012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785849950960:android:8f0c99515ca50e3b791835",
+        "android_client_info": {
+          "package_name": "com.ordenese"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785849950960-4s0bn0eibspna6duo4ne3nm3pff1ib09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ordenese",
+            "certificate_hash": "3e4de92a4fd614e68a46adbf2719730404ebfd4b"
+          }
+        },
+        {
+          "client_id": "785849950960-m8p26frv65fqm8cfk0hdhfcghmfegv94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ordenese",
+            "certificate_hash": "06093b5a756e5acf299b262e617470f489104ab2"
+          }
+        },
+        {
+          "client_id": "785849950960-po6i7vse35io3kl8vq44qbrmbrm554c9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ordenese",
+            "certificate_hash": "03c1defeb25c73e41ef50f799f9a46f06615939c"
+          }
+        },
+        {
+          "client_id": "785849950960-larmrc3frcpnjck7rbldjroq4r32an8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcndnSEE5PV2DYbrWPo8468df12Wu-SEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785849950960-larmrc3frcpnjck7rbldjroq4r32an8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785849950960:android:7ece0834862cb734791835",
+        "android_client_info": {
+          "package_name": "ordenese.rider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785849950960-larmrc3frcpnjck7rbldjroq4r32an8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcndnSEE5PV2DYbrWPo8468df12Wu-SEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785849950960-larmrc3frcpnjck7rbldjroq4r32an8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785849950960:android:6f416ffa5f2b4a6c791835",
+        "android_client_info": {
+          "package_name": "ordenese.vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785849950960-larmrc3frcpnjck7rbldjroq4r32an8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcndnSEE5PV2DYbrWPo8468df12Wu-SEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785849950960-larmrc3frcpnjck7rbldjroq4r32an8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

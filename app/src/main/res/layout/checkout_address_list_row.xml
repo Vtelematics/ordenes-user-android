@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/lay_checkout_address_list_row"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:visibility="visible"
+                android:id="@+id/tv_edit_account_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:textColor="@color/grey_600"
+                android:text="pranesh"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:visibility="visible"
+                android:id="@+id/tv_edit_account_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="Venkitapuram, Tatabad, Coimbatore, Tamil Nadu, India"
+                android:textColor="@color/grey_600"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:visibility="visible"
+                android:id="@+id/tv_edit_account_address_sub_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/grey_600"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:visibility="visible"
+                android:id="@+id/tv_edit_account_address_sub_details_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="@color/grey_600"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/img_btn_adds_list_selection_edit"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="end|center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:padding="@dimen/_4sdp"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:background="@drawable/svg_mode_48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/img_btn_adds_list_selection_delete"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="end|center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:padding="@dimen/_4sdp"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:background="@drawable/svg_delete_48dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_edit_account_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/grey_400"/>
+
+
+       <!-- <com.daimajia.swipe.SwipeLayout
+            android:id="@+id/lay_adds_list_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:gravity="start|center"
+            android:orientation="horizontal"
+            >-->
+
+
+           <!-- <LinearLayout
+                android:id="@+id/lay_adds_list_row_left_parent"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:visibility="visible">
+
+
+
+            </LinearLayout>-->
+
+
+
+        <!-- android:background="@color/black_transparent_0"-->
+
+
+        <!-- <ImageButton
+             android:id="@+id/img_btn_adds_list_selection_remove"
+             android:layout_width="@dimen/_20sdp"
+             android:layout_height="@dimen/_20sdp"
+             android:layout_marginStart="@dimen/_20sdp"
+             android:background="@drawable/ic_delete_color_accent_24dp"
+             android:contentDescription="@string/image" />-->
+        <!--?  android:background="@color/black_transparent_0"-->
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!-- </com.daimajia.swipe.SwipeLayout>-->

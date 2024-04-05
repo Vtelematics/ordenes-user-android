@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lay_row_cuisines"
+    android:background="@color/white">
+    <!--android:layout_marginTop="@dimen/_4sdp"-->
+    <!-- android:layout_marginBottom="@dimen/_4sdp"-->
+
+    <LinearLayout
+        android:id="@+id/layout_restaurant_list_empty_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_restaurant_list_empty_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:background="@drawable/ic_restaurant_menu_color_primary_48dp"
+            android:contentDescription="@string/image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/tv_restaurant_list_empty_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/there_is_no_restaurant_available"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_13sdp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

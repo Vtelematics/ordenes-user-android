@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_8sdp"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingRight="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_8sdp">
+
+   <!-- <TextView
+        android:id="@+id/tv_ar_all_restaurants_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:text="@string/all_restaurant"
+        android:textAllCaps="false"
+        android:textColor="@color/ar_popular_offers_text_color"
+        android:textSize="@dimen/_13sdp" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_ar_vendor_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@color/white" />
+
+
+
+</LinearLayout>

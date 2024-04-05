@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_8sdp"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingLeft="@dimen/_8sdp">
+
+    <TextView
+        android:visibility="visible"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:textColor="@color/ar_filter_title_text_color"
+        android:text="@string/additional_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:gravity="start|center"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:background="@drawable/svg_speaker_notes_48dp"
+            android:scaleType="fitXY"
+            android:padding="@dimen/_1sdp"
+            />
+
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add_a_note"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_gravity="start|center"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_1sdp"
+            android:textColor="@color/ar_filter_title_text_color"
+            />
+
+       <!-- <ImageView
+            android:id="@+id/img_an_add_a_note_delete"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:background="@drawable/svg_delete_48dp"
+            android:padding="@dimen/_4sdp"
+            />-->
+
+        <TextView
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/tv_an_add_a_note_clear"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/cl_clear"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:padding="@dimen/_4sdp"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+        <EditText
+            android:id="@+id/et_an_add_a_note"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@drawable/bg_no_background"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="viewStart"
+            android:hint="@string/enter_your_note"
+            android:inputType="text"
+            android:textColor="@color/ar_popular_offers_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/view_an_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:background="@color/grey_300"
+        android:visibility="visible"/>
+
+
+</LinearLayout>

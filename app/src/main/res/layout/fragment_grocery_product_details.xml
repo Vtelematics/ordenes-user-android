@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProductDetails">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu_option_dialog_list_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/btn_restaurant_menu_option_dialog_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@drawable/bg_square_primary_color"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:textColor="@color/white_for_dark"
+        android:textSize="@dimen/_14sdp" />
+    <!-- android:text="@string/add_to_cart"-->
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progress_bar_restaurant_menu_option_dialog"
+        android:layout_width="@dimen/_62sdp"
+        android:layout_height="@dimen/_62sdp" />
+
+    <LinearLayout
+        android:id="@+id/layout_restaurant_menu_option_dialog_close"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@drawable/bg_round_shape_grey_200"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tv_restaurant_menu_option_dialog_close"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:contentDescription="@string/image"
+            android:gravity="center"
+            android:src="@drawable/baseline_arrow_back_black_48dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lay_restaurant_menu_option_dialog_closed_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bottom_menu_trans_bg_color_for_restaurant_closed"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:background="@color/white"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/btn_restaurant_menu_option_dialog_closed_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="start"
+                android:textColor="@color/grey_700"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/btn_restaurant_menu_option_dialog_closed_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="end"
+                android:text="@string/ok"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

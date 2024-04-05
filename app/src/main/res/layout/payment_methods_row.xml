@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/lay_pm_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_pm_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:orientation="horizontal">
+<!--            android:background="@drawable/bg_co_ui_split_box"-->
+
+            <RadioButton
+                android:id="@+id/radio_btn_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:visibility="visible"
+                android:buttonTint="@color/colorPrimary"/>
+            <ImageView
+                android:id="@+id/radio_btn_disable"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_btn_disable"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/radio_btn_uncheck"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/radio_button_unchecked"/>
+            <ImageView
+                android:id="@+id/radio_btn_check"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_button_check_com"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/img_pm_image"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:background="@drawable/logo_cash"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone"/>
+            <!-- android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"-->
+            <ImageView
+                android:id="@+id/img_pm_image1"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:background="@drawable/airtel_money"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone"/>
+            <!-- android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"-->
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/tv_pm_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

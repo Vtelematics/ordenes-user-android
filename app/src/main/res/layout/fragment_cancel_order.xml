@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.MyOrderInfo.CancelOrder">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/reason_for_cancel"
+            android:gravity="start|center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12sdp"/>
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_square_grey300_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:gravity="top"
+            android:hint="@string/your_comment"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:id="@+id/submit"
+            android:background="@color/colorPrimary"
+            android:text="@string/submit"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_210sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_6sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:background="@color/white">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                android:layout_gravity="top">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_home_restaurant_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/image"
+                        android:scaleType="center" />
+
+                    <LinearLayout
+                        android:id="@+id/lay_drink_vendor_status_over"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_ar_vendor_image"
+                        android:orientation="vertical"
+                        android:visibility="gone" />
+                    <!--  android:background="@color/transparent_black_75"-->
+
+                    <TextView
+                        android:id="@+id/tv_drink_image_over_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="visible" />
+
+
+                </FrameLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+
+                android:orientation="horizontal">
+                <!--  android:background="@color/grey_300"-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_8sdp">
+
+                    <TextView
+                        android:id="@+id/tv_home_restaurant_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center|start"
+                        android:maxLines="2"
+                        android:textColor="@color/home_session_prefix_color"
+                        android:textSize="@dimen/_13sdp"
+                        android:fontFamily="@font/poppins_bold"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:gravity="start|center"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_home_delivery_time_image"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:contentDescription="@string/image"
+                        android:background="@drawable/baseline_access_time_black_48dp"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/tv_home_delivery_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:gravity="center|end"
+                        android:textColor="@color/home_bo_within_color"
+                        android:textSize="@dimen/_9sdp"
+                        android:fontFamily="@font/poppins_regular"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:id="@+id/tv_restaurant_sub_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/grey_700"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start|center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                   >
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:contentDescription="@string/image"
+                        android:background="@drawable/ic_delivery_cost_108"
+                        android:scaleType="fitXY" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_delivery_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/home_session_prefix_color"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lay_rating_statement_split_drink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginRight="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:contentDescription="@string/image"
+                        android:background="@drawable/home_best_offer_grey_dot"
+                        android:scaleType="fitXY" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_rating_statement_drink"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:src="@drawable/svg_star_rate_black_24dp"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_rating_statement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/home_session_prefix_color"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start|center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp">
+
+
+               <!-- <TextView
+                    android:id="@+id/tv_offer_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_9sdp"
+                    android:gravity="start|center"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:drawableStart="@drawable/ic_home_offer_timer_icon_14"
+                    android:textColor="@color/home_bo_offer_text_color"
+                    android:fontFamily="@font/poppins_regular"
+                    />-->
+
+                <LinearLayout
+                    android:id="@+id/lay_offer_content_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="start|center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:background="@drawable/ic_home_offer_timer_icon_14"
+                        android:contentDescription="@string/image"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/tv_offer_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:textColor="@color/home_bo_offer_text_color"
+                        android:textSize="@dimen/_9sdp"
+                        android:fontFamily="@font/poppins_regular"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

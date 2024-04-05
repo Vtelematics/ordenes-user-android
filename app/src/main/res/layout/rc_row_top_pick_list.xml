@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lay_row_top_pick_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="@dimen/_5sdp">
+
+
+    <ImageView
+        android:id="@+id/iv_image_top_pick"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="end|center"
+        android:layout_margin="@dimen/_1sdp"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_top_pick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:gravity="center"
+        android:textColor="@color/home_session_prefix_color"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/poppins_bold"/>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/lay_gc_list_pl_row">
+
+   <!-- <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp">-->
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_gravity="center|top"
+        android:layout_margin="@dimen/_3sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/gc_mp_product_image_bg_color"
+        app:cardCornerRadius="@dimen/_4sdp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_gc_l_pl_image"
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_84sdp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:visibility="visible"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_initial_cart_add"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_gravity="bottom|end"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:contentDescription="@string/image"
+                        android:background="@drawable/svg_add_cart_48dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="visible"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_cart_add_with_qty"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_gravity="bottom|center"
+                    app:cardCornerRadius="@dimen/_4sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_2sdp">
+
+                        <ImageButton
+                            android:padding="@dimen/_2sdp"
+                            android:id="@+id/img_cpl_remove"
+                            android:layout_width="@dimen/_26sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:background="@color/black_transparent_0"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="center"
+                            android:src="@drawable/baseline_remove_primary_color_18dp"/>
+
+                        <ImageButton
+                            android:padding="@dimen/_2sdp"
+                            android:id="@+id/img_cpl_delete"
+                            android:layout_width="@dimen/_26sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:background="@color/black_transparent_0"
+                            android:contentDescription="@string/image"
+                            android:layout_gravity="center"
+                            android:src="@drawable/svg_delete_outline_48dp"/>
+
+<!--                         android:src="@drawable/baseline_remove_primary_color_18dp"-->
+
+                        <TextView
+                            android:id="@+id/tv_cpl_item_count"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_1sdp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
+                        <!--  android:text="523"-->
+
+                        <ImageButton
+                            android:padding="@dimen/_2sdp"
+                            android:id="@+id/img_cpl_add"
+                            android:layout_width="@dimen/_26sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:layout_gravity="center"
+                            android:background="@color/black_transparent_0"
+                            android:contentDescription="@string/image"
+                            android:src="@drawable/baseline_add_primary_color_18dp"/>
+                        <!-- android:src="@drawable/baseline_add_primary_color_18dp"-->
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!--</FrameLayout>-->
+
+    <TextView
+        android:id="@+id/tv_gc_l_pl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:gravity="start|center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/home_session_prefix_color"
+        android:textSize="@dimen/_11sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_gc_l_pl_special_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="start|center"
+            android:textColor="@color/home_session_prefix_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:id="@+id/tv_gc_l_pl_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:gravity="start|center"
+            android:textColor="@color/home_session_prefix_color"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

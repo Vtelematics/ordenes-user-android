@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/lay_menu_option_dialog_row">
+
+    <LinearLayout
+        android:id="@+id/lay_ar_filter_dialog_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/poppins_medium"
+                    android:id="@+id/tv_ar_filter_dialog_filter_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="start|center"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_ar_filter_dialog_filter_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:scrollbars="none" />
+
+    <View
+        android:id="@+id/view_ar_filter_dialog_filter_list"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@color/grey_200"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"/>
+
+</LinearLayout>

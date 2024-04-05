@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout_category"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/_1sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/ic_online_card_payment"
+        android:id="@+id/image_payment"
+        android:gravity="start|center"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"/>
+
+</FrameLayout>

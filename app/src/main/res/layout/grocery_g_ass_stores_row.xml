@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_6sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/_4sdp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_gs_restaurant_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/image"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/ImageView.Corner"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/lay_gs_restaurant_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_ar_vendor_image"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+                <!--  android:background="@color/transparent_black_75"-->
+
+                <TextView
+                    android:id="@+id/tv_gs_restaurant_image_over_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:visibility="visible" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:gravity="start|center"
+                    android:orientation="vertical">
+                    <!--  android:background="@color/grey_300"-->
+
+                    <TextView
+                        android:id="@+id/tv_gs_restaurant_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center|start"
+                        android:maxLines="2"
+                        android:textColor="@color/grey_900"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_gs_restaurant_sub_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:textColor="@color/ar_sub_title_color"
+                        android:textSize="@dimen/_9sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+
+                    <!--
+                                        <LinearLayout
+                                            android:id="@+id/lay_gs_restaurant_status_container"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="start|center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tv_gs_restaurant_status"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/poppins_semi_bold"
+                                                android:gravity="start|center"
+                                                android:textColor="@color/ar_restaurant_status_text_color"
+                                                android:textSize="@dimen/_8sdp" />
+
+
+                                        </LinearLayout>
+                    -->
+
+                    <LinearLayout
+                        android:id="@+id/lay_gs_restaurant_delivery_time_container"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_1sdp"
+                            android:background="@drawable/baseline_access_time_black_18dp"
+                            android:contentDescription="@string/image"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/tv_gs_delivery_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:textColor="@color/grey_900"
+                            android:textSize="@dimen/_8sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_gs_restaurant_offers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:rotation="90"
+                        android:layout_width="@dimen/_9sdp"
+                        android:layout_height="@dimen/_9sdp"
+                        android:background="@drawable/outline_local_offer_black_48dp"
+                        android:contentDescription="@string/image"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/tv_gs_restaurant_offers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="start|center"
+                        android:textColor="@color/ar_restaurant_offers_text_color"
+                        android:textSize="@dimen/_8sdp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/favorite_icon"
+            android:src="@drawable/baseline_favorite_primary_color_24dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_gravity="end|center|top"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"/>
+
+        <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                       &lt;!&ndash; <ImageView
+                            android:id="@+id/img_gs_restaurant_offers_dot"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layerType="software"
+                            android:src="@drawable/bg_ar_vendor_list_dot" />&ndash;&gt;
+
+                        <LinearLayout
+                            android:id="@+id/lay_gs_restaurant_offers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="start|center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:rotation="90"
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_marginBottom="@dimen/_1sdp"
+                                android:background="@drawable/outline_local_offer_black_48dp"
+                                android:contentDescription="@string/image"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/tv_gs_restaurant_offers"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:fontFamily="@font/poppins_semi_bold"
+                                android:gravity="start|center"
+                                android:textColor="@color/ar_restaurant_offers_text_color"
+                                android:textSize="@dimen/_9sdp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+        -->
+
+    </FrameLayout>
+
+
+</androidx.cardview.widget.CardView>

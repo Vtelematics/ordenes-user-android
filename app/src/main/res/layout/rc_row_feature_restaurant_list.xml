@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingLeft="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/tv_title_top_pick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/_1sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_view_all_restaurant_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:layout_weight="0.3"
+                android:gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/see_all"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_11sdp"
+
+                android:visibility="visible" />
+            <!--  android:background="@drawable/bg_view_all"-->
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_home_restaurant_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_3sdp" />
+
+        <!-- <android.support.constraint.Guideline
+             android:id="@+id/guideline1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             app:layout_constraintGuide_percent="0.7" />-->
+
+        <!--    <View-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="@dimen/_3sdp"-->
+        <!--        android:background="@color/home_new_bg_color" />-->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:background="@color/grey_200"
+        />
+
+</LinearLayout>

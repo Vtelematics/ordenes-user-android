@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/gc_mp_category_image_bg_color" />
+
+    <!--<stroke
+        android:width="@dimen/_1sdp"
+        android:color="@color/home_notorious_brands_img_border_line_color" />-->
+
+    <corners android:radius="@dimen/_6sdp"
+        />
+
+</shape>
+

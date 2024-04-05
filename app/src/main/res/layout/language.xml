@@ -1,0 +1,143 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_restaurant_language"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.ordenese.Fragments.Language">
+    <!-- android:layout_height="@dimen/_210sdp"-->
+
+
+    <LinearLayout
+        android:id="@+id/layout_restaurant_language_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <!-- android:layout_height="@dimen/_210sdp"-->
+
+        <ProgressBar
+            android:id="@+id/progress_bar_restaurant_language"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_restaurant_language_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_restaurant_language_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:background="@color/colorPrimary"
+            android:gravity="start|center"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/choose_language"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:id="@+id/layout_restaurant_language_close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+           <!-- <ImageView
+                android:id="@+id/tv_restaurant_language_close"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@color/colorPrimary"
+                android:contentDescription="@string/image"
+                android:gravity="center"
+                android:src="@drawable/svg_clear_48dp" />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_restaurant_language_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:layout_marginBottom="@dimen/_56sdp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+        <!-- android:layout_height="@dimen/_210sdp"-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/layout_restaurant_language_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scrollbars="none"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/btn_restaurant_language_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:background="@drawable/bg_language_un_select"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/btn_restaurant_language_change"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_language_select"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:textAllCaps="false"
+            android:text="@string/change"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
